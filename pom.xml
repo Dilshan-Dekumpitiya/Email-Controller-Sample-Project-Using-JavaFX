@@ -13,6 +13,8 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
+
+        <!--Java FX Controls-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -20,6 +22,7 @@
             <scope>import</scope>
         </dependency>
 
+        <!--Java FX FXML-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -27,6 +30,7 @@
             <scope>import</scope>
         </dependency>
 
+        <!--Jfoenix-->
         <dependency>
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>

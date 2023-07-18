@@ -22,8 +22,7 @@ public class LoginFormController {
         Stage stage2 = new Stage();
         stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/dashboard-form.fxml"))));
         stage2.setTitle("Dashboard");
-
-
         stage2.show();
+
     }
 }
