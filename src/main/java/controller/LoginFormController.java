@@ -17,6 +17,8 @@ public class LoginFormController {
 
     @FXML
     void btnLoginOnAction(ActionEvent event) throws IOException {
+
+        //stage load code
         Stage stage = (Stage) loginContext.getScene().getWindow();
         stage.close();
 

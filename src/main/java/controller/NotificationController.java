@@ -8,15 +8,15 @@ import org.controlsfx.control.Notifications;
 
 public class NotificationController {
     public static Notifications notification(String text, String title) {
-        Image image =new Image("/img/login-notification.png");
+        Image image =new Image("/img/login-notification.png");  //image path here
         Notifications notifications=Notifications.create();
         notifications.graphic(new ImageView(image));
-        notifications.text(text);
-        notifications.title(title);
-        notifications.hideAfter(Duration.seconds(5));
+        notifications.text(text); //notification text
+        notifications.title(title); //notification title
+        notifications.hideAfter(Duration.seconds(5)); //notification hide seconds
         //notifications.darkStyle();
         notifications.show();
-        notifications.position(Pos.TOP_RIGHT);
+        notifications.position(Pos.TOP_RIGHT); //notification position
         return notifications;
     }
 }
