@@ -1,2 +1,2 @@
-# Email-Controller-and-Notification-Message-Sample-Project-Using-JavaFX
-## Use Maven Building System
+# Email-Controller-and-Notification-Popup-Message-Sample-Project-Using-JavaFX
+## Used Maven Building System
