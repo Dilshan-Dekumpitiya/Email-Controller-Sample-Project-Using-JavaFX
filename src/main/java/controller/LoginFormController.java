@@ -24,5 +24,16 @@ public class LoginFormController {
         stage2.setTitle("Dashboard");
         stage2.show();
 
+        Thread mailThread=new Thread(()->{
+            try {
+                EmailController.sendMail("aenpalmoilprocessingpvtltd@gmail.com"); //Recepient mail
+            } catch (Exception e) {
+                System.out.println("Failed to send e-mail.Network err!");
+                System.out.println(e);
+            }
+        });
+
+        mailThread.start();
+
     }
 }
