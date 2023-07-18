@@ -20,10 +20,11 @@ public class LoginFormController {
         stage.close();
 
         Stage stage2 = new Stage();
-        stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/dashboard-form.fxml"))));
+        stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/dashboard-form.fxml"))));
         stage2.setTitle("Dashboard");
         stage2.show();
 
+        //send mail code
         Thread mailThread=new Thread(()->{
             try {
                 EmailController.sendMail("aenpalmoilprocessingpvtltd@gmail.com"); //Recepient mail
@@ -34,6 +35,8 @@ public class LoginFormController {
         });
 
         mailThread.start();
+
+        //notification message code here
 
     }
 }

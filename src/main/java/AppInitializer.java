@@ -15,7 +15,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent load = FXMLLoader.load(getClass().getResource("./login-form.fxml"));
+        Parent load = FXMLLoader.load(getClass().getResource("./view/login-form.fxml"));
         Scene scene = new Scene(load);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Email Controller and Notification Sample Project");
