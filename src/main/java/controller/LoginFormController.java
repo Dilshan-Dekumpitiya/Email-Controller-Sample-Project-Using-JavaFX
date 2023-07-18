@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
 
@@ -37,6 +38,8 @@ public class LoginFormController {
         mailThread.start();
 
         //notification message code here
+        Notifications notification = NotificationController.notification("Login Successful", "Login Alert");
+        notification.show();
 
     }
 }
